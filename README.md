@@ -49,10 +49,12 @@ https://www.cs.unb.ca/~sray/papers/jackpine.pdf?utm_source=chatgpt.com
 ![Spatial benchmarks](image-5.png)
 Independant research showcasing good benchmarks for spatial data queries from PostgreSQL. TimescaleDB utilizes PostgreSQL/PostGIS, so it would have the same great results. It does not compare it to NoSQL dbs, but confirms official Timescale.com research.
 
-## Perfomance - temporal-spatio
+## Perfomance - spatio-temporal
 No official academic comparison researches.
 TimescaleDB - you can use hybrid queries like SELECT … WHERE time BETWEEN … AND ST_DWithin(geom, …). - timescale.com
+
 InfluxDB - you can use EXPERIMENTAL Geo package for making spatio-temporal data queries - https://www.influxdata.com/blog/tldr-geotemporal-data-influxdb/
+
 Druid - no information about spatio-temporal queries. But has a support for GIS data. https://blog.hellmar-becker.de/2021/09/05/geospatial-data-in-apache-druid-ingestion/
 
 ## Research conclusion - temporal dataset
@@ -67,7 +69,9 @@ Cassandra. If there are queries containing data filters like time range, Druid i
 ## MongoDB as an option
 ### Mongodb is the best option - acording to some researches. But is it so?
 https://gdmc.nl/publications/2016/Managing_Historic_AIS_data.pdf#:~:text=AIS%20data%2C%20vessel%20movement%20data%2C,a%20suitable%20database%20to%20manage - delft research on AIS and where to store the data
+
 https://al-kindipublishers.org/index.php/jcsts/article/view/8931/7607 - research on mongodb and how it handles big data
+
 https://www.jstage.jst.go.jp/article/jinnavi/207/0/207_36/_article - japanese research which db to use for AIS suggesting mongodb as the best option
 
 Coclusion: MongoDB can be used for large datasets
@@ -102,6 +106,7 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC7302557/
 ![Data points per second](image-13.png)
 ![Time query](image-14.png)
 ![Agregation](image-15.png)
+
 https://medium.com/timescale/timescaledb-vs-6a696248104e
 
 ![alt text](image-24.png)
