@@ -44,7 +44,7 @@ dataset by almost 5 times.
 ## Perfomance - temporal dataset
 ![Time range](image-4.png)
 ## Perfomance - spatial dataset
-https://www.cs.unb.ca/~sray/papers/jackpine.pdf?utm_source=chatgpt.com
+https://www.cs.unb.ca/~sray/papers/jackpine.pdf
 
 ![Spatial benchmarks](image-5.png)
 Independant research showcasing good benchmarks for spatial data queries from PostgreSQL. TimescaleDB utilizes PostgreSQL/PostGIS, so it would have the same great results. It does not compare it to NoSQL dbs, but confirms official Timescale.com research.
@@ -143,3 +143,29 @@ According to InfluxDB team research, Medium article research, and TimescaleDB fo
 
 
 Final suggestion: #1 TimescaleDB/PostGIS or #2 PostgreSQL/PostGIS or #3 InfluxDB
+
+## Reference list
+- https://documentation.spire.com/data-extracts/expected-ais-data-volumes/ - estimate file sizes for provision of historical AIS data
+- https://www.csitcp.org/paper/12/1214csit06.pdf#:~:text=Based%20on%20the%20experiment%20results%2C,Cassandra%20beats - David C. Wyld et al. (Eds): NLPA, AIS, BDAP, SOENG, IPPR - 2022
+pp. 63-76, 2022. CS & IT - CSCP 2022 DOI: 10.5121/csit.2022.121406
+PERFORMANCE STUDY OF TIME
+SERIES DATABASES
+- https://zenodo.org/records/2649876#:~:text=as%20well%20as%20their%20underlying,is%20significantly%20lower%20in%20PostgreSQL - Performance Evaluation of MongoDB and PostgreSQL for
+spatio-temporal data
+- https://gdmc.nl/publications/2016/Managing_Historic_AIS_data.pdf#:~:text=AIS%20data%2C%20vessel%20movement%20data%2C,a%20suitable%20database%20to%20manage - Delft research on AIS and where to store the data
+- https://al-kindipublishers.org/index.php/jcsts/article/view/8931/7607 - research on mongodb and how it handles big data
+- https://www.jstage.jst.go.jp/article/jinnavi/207/0/207_36/_article - japanese research which db to use for AIS suggesting mongodb as the best option
+- https://red9.com/database-popularity-ranking/ - popularity ranking
+- https://blog.hellmar-becker.de/2021/09/05/geospatial-data-in-apache-druid-ingestion/ - Druid and geospatial data
+- https://www.influxdata.com/blog/tldr-geotemporal-data-influxdb/ - InfluxDB and geospatial data
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC7302557/ - Comparative Analysis of Time Series Databases in the Context of Edge Computing for Low Power Sensor Networks
+- https://medium.com/timescale/timescaledb-vs-6a696248104e - TimescaleDB vs PostgreSQL benchmarks
+- https://www.influxdata.com/comparison/postgres-vs-timescaledb/ - official InfluxDB research comparing PostgreSQL and TimescaleDB
+- https://www.timescale.com/forum/t/benchmark-shows-that-plain-postgres-is-significantly-faster/819/6 - official Timescake forum, comprehensive answers from the community
+- https://www.cs.unb.ca/~sray/papers/jackpine.pdf- Jackpine: A Benchmark to Evaluate Spatial
+Database Performance
+
+
+
+
+
